@@ -6,7 +6,7 @@ Created on Thu Sep 12 22:40:41 2024
 """
 n = int(input("Nhập số nguyên dương n: "))
 S = 0
-while  n<0 :
+while  n<= 0 :
     n= int(input("Số vừa nhập không phải là số nguyên dương: "))
 for i in range(1, n + 1):
    S += i
