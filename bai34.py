@@ -5,9 +5,9 @@ Created on Fri Sep 13 22:20:47 2024
 @author: Nguyễn Thị Cẩm Nhung - 23712471 
 """
 n = int(input("Nhập số nguyên dương: "))
-if n< 0:
-    print("Số vừa nhập không phải số nguyên dương ")
-elif n == 1:
+while  n<= 0:
+    n = int(input("Nhập lại số nguyên dương: "))
+if n == 1:
     print(f"{n} không phải là số nguyên tố.")
 else:
     is_prime = True
