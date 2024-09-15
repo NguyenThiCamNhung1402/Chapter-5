@@ -8,8 +8,7 @@ N = int(input("Nhập số nguyên dương N: "))
 while N <= 0:
     N = int(input("Không hợp lệ. Nhập lại số nguyên dương: "))
 tong = 0
-so_du = N
-while so_du > 0:
-    tong += so_du % 10  
-    so_du //= 10       
-print("Tổng các chữ số của", N, "là:", tong)
+while n  > 0:
+    tong += n  % 10  
+    n  //= 10       
+print("Tổng các chữ số là:", tong)
