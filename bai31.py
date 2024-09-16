@@ -11,16 +11,10 @@ while a <= 0 or b <= 0 or c <= 0:
     a = int(input("Nhập lại cạnh thứ nhất: "))
     b = int(input("Nhập lại cạnh thứ hai: "))
     c = int(input("Nhập lại cạnh thứ ba: "))
-if a > b:
-    a, b = b, a
-if b > c:
-    b, c = c, b
-if a > b:
-        a, b = b, a
-if a + b > c:
+if a + b > c and a + c > b and b + c > a:
     if a == b == c:
         loai = "Tam giác đều"
-    elif a**2 + b**2 == c**2:
+    elif a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2:
         loai = "Tam giác vuông"
     elif a == b or b == c or a == c:
         loai = "Tam giác cân"
@@ -28,6 +22,5 @@ if a + b > c:
         loai = "Tam giác thường"
 else:
     loai = "Ba số không lập thành tam giác"
+
 print("Kết quả kiểm tra:", loai)
-
-
